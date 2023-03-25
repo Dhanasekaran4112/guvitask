@@ -1,0 +1,42 @@
+
+		/* Center the content vertically */
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		/* Add animation to the title */
+		.title {
+			animation: slideInDown 1s ease-in-out;
+			margin-bottom: 2rem;
+		}
+		/* Add animation to the buttons */
+		.buttons {
+			animation: fadeInUp 1s ease-in-out;
+		}
+		
+		/* Keyframes for the animations */
+		@keyframes slideInDown {
+			0% {
+				transform: translateY(-100%);
+				opacity: 0;
+			}
+			100% {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+		@keyframes fadeInUp {
+			0% {
+				transform: translateY(50%);
+				opacity: 0;
+			}
+			100% {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+	
